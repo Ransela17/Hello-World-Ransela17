@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ran Sela CV </title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function ChangeTextColor() {
+            var x = document.getElementById("firstjs");
+            x.style.color = "red";
+        }
+    </script>
+    <script> //alert Script
+        function explorerAlert() {
+            alert(document.getElementById("alertjs").innerHTML);
+        }
+    </script>
+</head>
+
+<body>  
+    <div class="container" id="container">
+            <div class="row">
+                <h1>My First JavaScript</h1>
+                <p id="firstjs">Click the button to change the color of this paragraph.</p>
+                <button onclick="ChangeTextColor()">Change Text Color</button>
+                <hr>
+                <p>Click the "DarkMode" button to set Dark background or "LightMode" button to set Light backround
+                <br>
+                <button onclick="ChangeBackround(1)">DarkMode</button>
+                <button onclick="ChangeBackround(0)">WhiteMode</button>
+                </p>
+                <script>
+                function ChangeBackround(type) {
+                    if (type == 1){
+                        document.getElementById("container").style.backgroundColor = "gray";
+                    }
+                    else{
+                        document.getElementById("container").style.backgroundColor = "bisque";
+                    }
+                }
+                </script>
+                <hr>
+                <p id="treedjs">This is Some Text</p>
+                <script> // One Script - Not includ a function change thet detemines contents of an element 
+                    document.getElementById('treedjs').innerHTML= "The another Text!";
+                </script>
+                <hr>
+                <p>Click the button to alert the text of this paragraph.</p>
+                <p id="alertjs">This is alert text.</p>
+                <button onclick="explorerAlert()">Alert Button</button>
+
+
+            </div>
+    </div>
+</body>
+</html>
