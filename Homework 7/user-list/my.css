@@ -1,0 +1,55 @@
+h1, h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section {
+    margin: 2%;
+    text-align: center;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: -webkit-pictograph;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.full_name{
+    font-weight: bold;
+}
+
+a {
+    padding: 10px 24px;
+    background-color: darkseagreen;
+    color: black;
+    border-radius: 22px;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 10px 24px;
+    color: black;
+    border-radius: 22px;;
+    border: solid 1px;
+    border-color: darkseagreen;
+    background-color: transparent;
+}
+
+hr{
+    margin-top: 35px;
+    width: 50%;
+    border-color: black;
+    
+}
+.home{
+    margin: auto;
+    text-align: center;
+}
